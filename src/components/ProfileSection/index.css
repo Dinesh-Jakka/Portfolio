@@ -1,0 +1,180 @@
+.profile-section {
+  background-image: url('./bg.jpg');
+  text-align: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Roboto;
+}
+
+.profile-container {
+  display: inline-block;
+  width: 50%;
+  align-self: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile-name {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.user-details {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: center;
+}
+
+.detail-item svg {
+  margin-right: 10px;
+  width: 21px; 
+  height: 20px; 
+  fill: #fff; 
+
+}
+.email-item{
+  text-decoration: none;
+}
+
+.detail-text {
+  font-size: 16px;
+  color: #fdfdfd;
+}
+
+.linkedin-button , .resume-button {
+  display: inline-flex;
+  align-items: center;
+  border: solid 1px #fff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.linkedin-button svg,.resume-button svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  
+}
+
+.linkedin-button:hover {
+  background: linear-gradient(135deg, #005682, #00a9e0);
+  transition: background 0.4s ease;
+}
+
+.resume-button:hover {
+  background: linear-gradient(135deg, #d82696, #FF79B4);
+  transition: background 0.4s ease;
+}
+
+
+@media (max-width: 768px) {
+  .user-details{
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-container {
+      width: 80%; 
+      padding: 20px; 
+  }
+
+  .profile-name {
+      font-size: 36px; 
+      margin-bottom: 15px; 
+  }
+
+  .profile-image {
+      width: 150px; 
+      height: 150px; 
+  }
+
+  .detail-text {
+      font-size: 14px;
+  }
+
+  .linkedin-button {
+      padding: 8px 16px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-name {
+      font-size: 28px; 
+  }
+
+  .profile-image {
+      width: 120px; 
+      height: 120px; 
+  }
+
+  .detail-text {
+      font-size: 12px; 
+  }
+  .scroll-down-animate {
+    width: 90%;
+  }
+}
+
+.scroll-down-animate {
+  display: inline-block;
+  width: 100%;
+  max-width: 700px;
+  align-self: center;
+
+  position: absolute; /* Position the element absolutely */
+  bottom: 50px; /* Adjust this value as needed to place it above the bottom edge */
+  /* Center horizontally */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: bounce 1s infinite; /* Example animation */
+}
+
+.text-block {
+  font-family: Roboto; /* Customize as needed */
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.w-embed svg{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 21px; 
+  height: 20px; 
+  fill: #fff; 
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Bounce height */
+  }
+}

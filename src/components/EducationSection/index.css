@@ -1,0 +1,71 @@
+.education-section-container{
+  background-color: #111;
+  /* background: radial-gradient(circle, rgba(135, 206, 250, 0.8) 10%, rgba(0, 102, 204, 1) 100%); */
+  color: #ffffff; /* Light text for contrast */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 55px;
+}
+.education-section {
+  width: 80%;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for a smoother look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  
+}
+
+
+
+.timeline-item {
+  margin: auto;
+  width: 100% !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.course-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+}
+
+.school-name{
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.education-cgpa{
+  font-size: 14px;
+  margin-bottom: 0px;
+  
+}
+.year{
+  display: none;
+}
+@media (max-width: 768px) {
+  .year{
+    display: inline;
+    font-size: 14px;
+  }
+  .timeline-item{
+    font-weight:300;
+    font-size: 18px;
+  }
+}
+.edu-card-head{
+  display: flex;
+  justify-content: center;
+}
+.edu-icon{
+  margin-right: 10px;
+  color: blue;
+}

@@ -1,0 +1,200 @@
+.skills-section-container{
+  background-color: #111; /* Dark theme background */
+  color: #ffffff; /* Light text for contrast */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 55px;
+}
+.skill-profiency {
+  width: 80%;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for a smoother look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.heading {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(285.49deg, #F7BE2B 0%, #FEF3D9 100%);
+  background-clip: text;
+  margin-bottom: 30px;
+  color: transparent;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sp-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.tab-link {
+  cursor: pointer;
+  padding: 7px 10px 0px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: #292929;
+  color: #fff;
+  text-decoration: none;
+}
+
+.w--current {
+  background-color:blueviolet;
+}
+
+.tab-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.overview-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; /* Allows the items to be spaced out */
+}
+
+.skill-item {
+  flex: 0 0 calc(50% - 10px); /* 2 items per row, with margin */
+  margin-bottom: 20px; /* Space between rows */
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skill{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.skill-name {
+  font-size: 18px;
+}
+
+.skill-percent {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.skill-progress {
+  width: 100%;
+  background-color: #444;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 10px;
+  border-radius: 5px;
+}
+
+.detail-view-content {
+  padding: 20px; /* Padding inside the detail view */
+  background-color: #444; /* Light gray background for the detail view */
+  border-radius: 8px; /* Rounded corners for the detail view */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 10px; /* Space above the detail view */
+  overflow-x: auto; 
+  max-width: 600px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detail-view-row {
+  padding: 10px 0;
+}
+
+
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse borders for a single line between cells */
+  background-color: #1e1e1e; /* Dark background */
+  color: #fff; /* White text */
+}
+
+.detail-table, .detail-table th, .detail-table td {
+  border: 1px solid #46E3B7; /* Border color for the table and cells */
+}
+
+.header-title {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #292929; /* Darker background for headers */
+  text-align: center;
+}
+
+.detail-view-row td {
+  padding: 10px;
+  text-align: center; /* Align text in the center */
+}
+
+.skill-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px; /* Optional rounded corners */
+  vertical-align: middle; /* Align image with text */
+}
+
+.skill-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .skill-item {
+    flex: 0 0 calc(100% - 10px); /* Stack items in one column for smaller screens */
+  }
+  .skill-name{
+    flex-direction: column;
+  }
+}
+
+.show-msg{
+  align-self: center;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  padding:2px 7px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+.msg{
+  color: #fff;
+  font-size: 12px;
+}

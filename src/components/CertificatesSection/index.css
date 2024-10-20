@@ -1,0 +1,119 @@
+.certificates-section {
+  background-color: #111; /* Dark background */
+  padding: 40px 20px;
+  color: #ffffff; /* Text color */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(285.49deg, #F7BE2B 0%, #FEF3D9 100%);
+  background-clip: text;
+  margin-bottom: 30px;
+  color: transparent;
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate-card {
+  flex: 0 1 300px; /* Flex grow: 0, flex shrink: 1, base width: 300px */
+  height: 170px;
+  background-color: #1e1e1e; /* Dark theme */
+  border-radius: 8px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* Ensures content is evenly distributed */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  border:1px solid #fff;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  border:1px solid #46E3B7;
+}
+
+.cer-logo {
+  color:blueviolet;
+  border-radius: 10px;
+}
+
+.certificate-logo {
+  width: 100px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%; /* Optional, can remove if not desired */
+}
+
+.certificate-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.view-certificate-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #46E3B7; /* Button color */
+  text-decoration: none;
+  font-size: 16px;
+  border: 1px solid #46E3B7;
+  padding:4px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-certificate-link:hover {
+  background-color: #46E3B7;
+  color: #1e1e1e; /* Dark text on hover */
+}
+
+.vc-arrow {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .certificate-card {
+    width: 100%; /* Full width for mobile */
+  }
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.tab-item {
+  cursor: pointer;
+  padding: 7px 10px 7px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: #292929;
+  color: #fff;
+  border-width: 0px;
+}
+
+.active-tab {
+  background-color:blueviolet;
+  cursor: pointer;
+  padding: 7px 10px 7px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  color: #fff;
+  border-width: 0px;
+}

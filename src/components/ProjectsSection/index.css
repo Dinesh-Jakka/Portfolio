@@ -1,0 +1,92 @@
+.projects-section {
+    background-color: #111; 
+    color: #ffffff; 
+    padding: 20px; 
+    padding-top: 55px;
+    padding-bottom: 55px;
+    min-height: 100vh;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px; 
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .projects-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+  }
+  
+  .project-card {
+    padding: 10px;
+    background-color: #292929; 
+    border: 1px solid #46E3B7; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    width: 300px;
+    text-align: center; 
+    transition: transform 0.3s; 
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); 
+    border-color: #fff;
+  }
+  
+  .project-image {
+    width: 100%; 
+    height: 100px; 
+    height: 30%;
+    border-radius: 10px;
+  }
+  
+  .project-date {
+    font-size: 0.9rem; 
+    color: #cccccc; 
+    margin: 10px 0;
+  }
+  
+  .project-title {
+    font-size: 1.2rem; 
+    margin: 10px 0; 
+  }
+  
+  .project-description {
+    font-size: 0.9rem; 
+    padding: 0 10px; 
+    margin: 10px 0; 
+  }
+  
+  .project-tech {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+  }
+  
+  .tech-item {
+    background-color: #444; /* Dark background for tech items */
+    color: #ffffff; /* White text */
+    padding: 5px 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+  }
+  .project-link-button {
+    display: inline-block;
+    background-color: blueviolet; /* Button color */
+    color: #fff; /* Text color */
+    padding: 5px 10px; /* Padding for the button */
+    margin-top: 5px; /* Space above button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .project-link-button:hover {
+    background-color: #fff; /* Darken button color on hover */
+    color: #000; /* White text on hover */
+  }
+  
