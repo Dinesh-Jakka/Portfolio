@@ -4,7 +4,7 @@ import './index.css'; // Import your CSS for styling
 const projects = [
   {
     title: 'Jobby: Video Streaming Platform',
-    description: 'Built Nxt Watch using React and Styled Components, showcasing responsive design, API-driven video content, authentication handling, and theme customization.',
+    description: 'Implemented Jobby App where users can log in and can see a list of jobs with search by Job title, filters based on Salary range and Employment type, etc',
     imageSrc: '/images/jobby_sm.png',
     technologies: ['React JS', 'Node JS'],
     link: 'https://dineshjJobbyApp.ccbp.tech'

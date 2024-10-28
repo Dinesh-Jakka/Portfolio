@@ -1,48 +1,48 @@
 /* src/components/index.css */
+
+/* Existing Navbar Styles */
 .navbar {
-    position: relative;
-    width: 100%;
-    background-color: #000; 
-    z-index: 1000; /* Ensure the navbar is above other content */
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    height: 45px;
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  height: 45px;
 }
 
 .navbar.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .nav-menu {
-    
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    justify-content: space-around;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .nav-link {
-    color: white; 
-    text-decoration: none; 
-    padding: 10px; 
-    
+  color: white;
+  text-decoration: none;
+  padding: 10px;
 }
+
 @keyframes shine {
-    0% {
+  0% {
       background-position: 0%;
-    }
-    100% {
-      background-position: 200%;
-    }
   }
+  100% {
+      background-position: 200%;
+  }
+}
 
 .nav-link:hover {
-    /* color: #007acc !important; Ensure the hover color change takes priority */
-    background: linear-gradient(105.32deg, #00d2ff 25.75%, #3a7bd5 88.38%);
+  background: linear-gradient(105.32deg, #00d2ff 25.75%, #3a7bd5 88.38%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -51,8 +51,15 @@
 }
 
 .active-nav-item {
-    border-bottom: 1px solid #0995b5 !important;/* Underline for active link */
-    color: #3a7bd5 !important; /* Active link color */
-    font-size: 17px !important;
-    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  border-bottom: 1px solid #0995b5 !important;
+  color: #3a7bd5 !important;
+  font-size: 17px !important;
+  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+/* Hide Navbar on Mobile Screens */
+@media (max-width: 768px) {
+  .navbar {
+      display: none !important;
+  }
 }

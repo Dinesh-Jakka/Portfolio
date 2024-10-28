@@ -68,25 +68,25 @@
   }
   
   .tech-item {
-    background-color: #444; /* Dark background for tech items */
-    color: #ffffff; /* White text */
-    padding: 5px 10px; /* Padding */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #444; 
+    color: #ffffff; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
   }
   .project-link-button {
     display: inline-block;
-    background-color: blueviolet; /* Button color */
-    color: #fff; /* Text color */
-    padding: 5px 10px; /* Padding for the button */
-    margin-top: 5px; /* Space above button */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-size: 1rem; /* Font size */
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    background-color: blueviolet; 
+    color: #fff; 
+    padding: 5px 10px; 
+    margin-top: 5px; 
+    border-radius: 5px; 
+    text-decoration: none;
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; 
   }
   
   .project-link-button:hover {
-    background-color: #fff; /* Darken button color on hover */
-    color: #000; /* White text on hover */
+    background-color: #fff; 
+    color: #000; 
   }
   
