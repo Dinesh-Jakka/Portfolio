@@ -37,22 +37,22 @@ const SkillsSection = () => {
         <div className="sp-tabs">
           
             <div className="tabs-menu" role="tablist">
-              <a 
+              <button
                 className={`tab-link ${activeTab === 'Overview' ? 'w--current' : ''}`} 
                 onClick={() => setActiveTab('Overview')} 
                 role="tab" 
                 aria-selected={activeTab === 'Overview'}
               >
                 <h6>Over View</h6>
-              </a>
-              <a 
+              </button>
+              <button
                 className={`tab-link ${activeTab === 'Detail View' ? 'w--current' : ''}`} 
                 onClick={() => setActiveTab('Detail View')} 
                 role="tab" 
                 aria-selected={activeTab === 'Detail View'}
               >
                 <h6>Detail View</h6>
-              </a>
+              </button>
             </div>
             <div className="tab-content">
               {activeTab === 'Overview' ? 

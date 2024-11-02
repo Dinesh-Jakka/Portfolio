@@ -1,78 +1,85 @@
-.education-section-container{
-  background-color: #111;
-  /* background: radial-gradient(circle, rgba(135, 206, 250, 0.8) 10%, rgba(0, 102, 204, 1) 100%); */
-  color: #ffffff;
-  padding: 20px;
+.education-section-container {
+  background-color: #111; /* Dark background */
+  color: #ffffff; /* Text color */
+  padding: 55px 20px 20px; /* Consistent padding */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 55px;
 }
+
 .education-section {
   width: 80%;
   padding: 20px;
-  border-radius: 8px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Deeper shadow */
+  background: rgba(30, 30, 30, 0.9); /* Slight transparency */
 }
 
 .section-title {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-  
+  font-size: 28px; /* Increased size */
+  margin-bottom: 30px; /* More space */
+  font-weight: bold;
 }
 
-
-
 .timeline-item {
-  margin: auto;
-  width: 100% !important;
+  margin: 20px auto; /* Spacing between items */
+  width: 100%;
   text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Separator */
+  padding: 15px 0; /* Padding for items */
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .course-title {
-  font-size: 20px;
+  font-size: 20px; /* Adjusted for readability */
   font-weight: bold;
   color: #fff;
-  font-weight: bold;
-  font-size: 0.9rem;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow */
 }
 
-.school-name{
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 0px;
-  font-size: 0.9rem;
+.school-name {
+  font-size: 16px; /* Consistent size */
+  color: #ccc; /* Light color */
+  margin: 5px 0; /* Space around */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow */
 }
-.education-cgpa{
+
+.education-cgpa {
   font-size: 14px;
-  margin-bottom: 0px;
-  font-size: 0.9rem;
-  
+  color: #aaa; /* Less emphasis */
 }
-.year{
-  display: none;
+
+.year {
+  display: none; /* Hidden by default */
 }
+
 @media (max-width: 768px) {
-  .year{
-    display: inline;
-    font-size: 14px;
-    font-size: 0.9rem;
+  .year {
+    display: inline; /* Show on mobile */
+    font-size: 14px; /* Consistent size */
   }
-  .timeline-item{
-    font-weight:300;
-    font-size: 18px;
-    font-size: 0.9rem;
+  .timeline-item {
+    font-weight: 300; /* Lighter on mobile */
+    font-size: 18px; /* Adjusted size */
   }
 }
-.edu-card-head{
+
+.edu-card-head {
   display: flex;
   justify-content: center;
+  align-items: center; /* Center icons */
+  margin-bottom: 10px; /* Space below */
 }
-.edu-icon{
-  margin-right: 10px;
+
+.edu-icon {
+  margin-right: 10px; /* Space between icon and text */
   color: #fff;
   font-weight: bold;
+  font-size: 1.5rem; /* Larger icon for visibility */
 }
